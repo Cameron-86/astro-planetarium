@@ -12,4 +12,38 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/bg-images/moon.png"), url("/bg-images/land.png"),
+    url("/bg-images/star1.png"), url("/bg-images/star2.png"),
+    linear-gradient(to bottom, #260051 0%, #5d0065 54%, #f6abab 100%);
+  background-size: 35%, contain, contain, contain, contain;
+  background-position: 92% 4%, bottom, top, top, bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+@keyframes constellationFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  background-image: url("/bg-images/constellation.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  animation: constellationFade 1.5s infinite alternate ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 93vw;
+  height: 50vh;
+  top: 1.5%;
+  left: 4%;
 }

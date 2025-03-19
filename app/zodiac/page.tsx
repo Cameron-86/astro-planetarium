@@ -36,7 +36,7 @@ const Zodiac = () => {
             className="p-4 text-center bg-gray-200 rounded-lg cursor-pointer"
           >
             <img
-              src={`/${zodiac}.svg`}
+              src={`/zodiac/${zodiac}.svg`}
               alt="libra"
               className="bg-black w-[72px] h-[72px]"
             />
