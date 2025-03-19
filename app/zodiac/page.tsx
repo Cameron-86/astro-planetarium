@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Zodiac = () => {
+  const [activeOption, setActiveOption] = useState("today");
+
   const zodiacSigns = [
     "aquarius",
     "pisces",
@@ -18,30 +22,38 @@ const Zodiac = () => {
   ];
 
   return (
-    <div>
-      <div className="flex cursor-pointer gap-4 mb-4">
-        {["today", "tomorrow"].map((category) => (
-          <div
-            key={category}
-            className="w-3xs p-4 text-center bg-gray-300 rounded-lg"
-          >
-            {category}
-          </div>
-        ))}
+    <div className="flex flex-col mx-auto mt-44 w-[344px]">
+      <div className="flex justify-end cursor-pointer mb-8 text-xs font-semibold ">
+        <div className="flex gap-4 w-fit border-b-1 border-[rgba(247,248,250,0.6)]">
+          {["today", "tomorrow"].map((category) => (
+            <div
+              key={category}
+              onClick={() => setActiveOption(category)}
+              className={`pb-2 ${
+                activeOption === category
+                  ? "text-[#f7f8fa] border-b-1"
+                  : "text-[#CCCCCC]"
+              }`}
+            >
+              {category}
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 space-y-8 w-full">
         {zodiacSigns.map((zodiac) => (
-          <div
+          <Link
             key={zodiac}
-            className="p-4 text-center bg-gray-200 rounded-lg cursor-pointer"
+            href={`./`}
+            className="flex flex-col items-center cursor-pointer"
           >
             <img
               src={`/zodiac/${zodiac}.svg`}
               alt="libra"
-              className="bg-black w-[72px] h-[72px]"
+              className="w-[72px] h-[72px] mb-1"
             />
-            {zodiac}
-          </div>
+            <p className="text-[#f8f8fb] text-sm font-medium">{zodiac}</p>
+          </Link>
         ))}
       </div>
 

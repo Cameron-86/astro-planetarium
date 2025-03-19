@@ -37,13 +37,10 @@ body::after {
   background-image: url("/bg-images/constellation.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1;
   animation: constellationFade 1.5s infinite alternate ease-in-out;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 93vw;
   height: 50vh;
-  top: 1.5%;
+  top: -30%;
   left: 4%;
+  z-index: -1;
 }
