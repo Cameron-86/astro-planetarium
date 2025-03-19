@@ -44,7 +44,7 @@ const Zodiac = () => {
         {zodiacSigns.map((zodiac) => (
           <Link
             key={zodiac}
-            href={`./`}
+            href={`./zodiac/${zodiac}?date=${activeOption}`}
             className="flex flex-col items-center cursor-pointer"
           >
             <img
