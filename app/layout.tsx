@@ -1,6 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Astro-Planetarium",
+  description: "이 웹사이트는 심리테스트를 제공하는 사이트입니다.",
+  openGraph: {
+    title: "Astro-Planetarium",
+    description: "웹사이트의 기본 설명",
+    url: "https://example.com", // 여기서는 사이트의 기본 URL을 넣어줍니다.
+    // images: [
+    //   {
+    //     url: "https://example.com/default-image.png",
+    //     width: 1200,
+    //     height: 630,
+    //   },
+    // ],
+  },
+};
 
 export default function RootLayout({
   children,
