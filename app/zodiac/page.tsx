@@ -45,7 +45,7 @@ const Zodiac = () => {
           <Link
             key={zodiac}
             href={`./zodiac/${zodiac}?date=${activeOption}`}
-            className="flex flex-col items-center cursor-pointer"
+            className="flex flex-col items-center cursor-pointer bg-no-repeat"
           >
             <img
               src={`/zodiac/${zodiac}.svg`}
