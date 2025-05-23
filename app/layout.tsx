@@ -8,13 +8,13 @@ export const metadata: Metadata = {
     title: "Astro-Planetarium",
     description: "웹사이트의 기본 설명",
     url: "https://example.com", // 여기서는 사이트의 기본 URL을 넣어줍니다.
-    // images: [
-    //   {
-    //     url: "https://example.com/default-image.png",
-    //     width: 1200,
-    //     height: 630,
-    //   },
-    // ],
+    images: [
+      {
+        url: "/Meta.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

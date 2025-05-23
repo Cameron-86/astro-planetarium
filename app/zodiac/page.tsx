@@ -32,7 +32,7 @@ const Zodiac = () => {
               className={`pb-2 ${
                 activeOption === category
                   ? "text-[#f7f8fa] border-b-1"
-                  : "text-[#CCCCCC]"
+                  : "text-[#F8F8FB] brightness-[0.8]"
               }`}
             >
               {category}

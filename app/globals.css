@@ -35,13 +35,12 @@ body {
 body::after {
   content: "";
   position: absolute;
-  background-image: url("/bg-images/constellation.png");
+  background-image: url("/bg-images/starLine.png");
   background-size: contain;
   background-repeat: no-repeat;
   animation: constellationFade 1.5s infinite alternate ease-in-out;
-  width: 93vw;
-  height: 50vh;
-  top: -30%;
-  left: 4%;
+  width: 100%;
+  height: 100%;
+  top: 0;
   z-index: -1;
 }
