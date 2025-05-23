@@ -34,7 +34,7 @@ const sign = () => {
   };
 
   const copyUrl = async () => {
-    const text = "site_url.com";
+    const text = "https://astro-planetarium.vercel.app/";
 
     try {
       await navigator.clipboard.writeText(text);

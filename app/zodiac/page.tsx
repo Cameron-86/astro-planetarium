@@ -18,7 +18,7 @@ const Zodiac = () => {
     "libra",
     "scorpio",
     "sagittarius",
-    "capricorne",
+    "capricorn",
   ];
 
   return (

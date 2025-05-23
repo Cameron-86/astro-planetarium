@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Astro-Planetarium",
     description: "웹사이트의 기본 설명",
-    url: "https://example.com", // 여기서는 사이트의 기본 URL을 넣어줍니다.
+    url: "https://astro-planetarium.vercel.app/", // 여기서는 사이트의 기본 URL을 넣어줍니다.
     images: [
       {
         url: "/Meta.png",
